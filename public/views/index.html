@@ -1,20 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Hello Node!</title>
     <script type="text/javascript" src="/vendors/jquery.min.js"></script>
     <script type="text/javascript" src="/scripts/clientapp.js"></script>
+    <link rel="stylesheet" href="/views/stylesheet.css" />
 </head>
-<body>
-    <h1>Welcome to Node!</h1>
-    <form id="post-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" />
-        <label for="spiritAnimal">Spirit Animal:</label>
-        <input type="text" id="spiritAnimal" name="spiritAnimal" />
+<div>
+    <h2>Welcome</h2>
+    <div class="group-form">
+        <form id="postName">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+            <button id="post-name">Post Name!</button>
+        </form>
+        <form id="postAnimal">
+            <label for="spiritAnimal">Spirit Animal</label>
+            <input type="text" id="spiritAnimal" name="spiritAnimal" />
+            <button id="post-animal">Post Animal!</button>
+        </form>
+    </div>
+    <div class="generate-button">
+        <button id="combo">Click for a combo</button>
+    </div>
+    <div class="display-animal">
+    </div>
+    <div class="display-name">
 
-        <button id="post-data">Post!</button>
-        <button id="get-data">Get Data!</button>
-    </form>
+    </div>
+    <div class="display-combo"></div>
+
 </body>
 </html>
